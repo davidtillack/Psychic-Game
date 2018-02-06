@@ -47,7 +47,7 @@ document.onkeyup = function(pressKey) {
 		alert("Hah! The Computer Won That Game!");
 	}
 
-	// Set the game stats to the user in a pannel
+	// Set the game stats to the user in the Bootsrap-Pannel
 	var displayToUser =
 		"Rounds Won: " + roundsWon + 
 		"<br>Rounds Lost: " + roundsLost + 
