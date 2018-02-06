@@ -12,7 +12,6 @@ div.jumbotron{
 
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 30rem;
   min-height: 100vh;
   display: flex;

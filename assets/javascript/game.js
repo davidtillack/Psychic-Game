@@ -7,7 +7,7 @@ var remainingGuesses = 9;
 var letterArray = [];
 var lettersGuessed = [];
 
-// Play volume for winning and losing
+// Play sound for winning and losing
 var audioWin = new Audio('./assets/Sound/sound1.mp3');
 var audioLost = new Audio('./assets/Sound/sound2.mp3');
 
@@ -24,7 +24,6 @@ document.onkeyup = function(pressKey) {
 		roundsWon++;
 		remainingGuesses = 9;
 		lettersGuessed.length = 0;
-		letterArray = [];
 		audioWin.play();
 		alert("Great Work! You Guessed Right!");
 	
@@ -41,10 +40,9 @@ document.onkeyup = function(pressKey) {
 	if (remainingGuesses === 0) {
 		roundsLost++;
 		remainingGuesses = 9;
-		lettersGuessed.length = 0;
-		letterArray = [];	
+		lettersGuessed.length = 0;	
 		audioLost.play();
-		alert("Hah! The Computer Won That Game!");
+		alert("Ha! The Computer Won That Game!");
 	}
 
 	// Set the game stats to the user in the Bootstrap-Pannel
