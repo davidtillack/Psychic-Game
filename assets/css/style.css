@@ -1,0 +1,42 @@
+div.panel.panel-default{
+  float:left;
+  width:100%;
+  text-align:center;
+  opacity:0.45;
+}
+
+div.jumbotron{
+  background-color:transparent;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.6)), url("https://i.imgur.com/rRoPcF5.gif");
+  background-position: 50% 15%;
+  background-size: cover;
+}
+
+/* Create animation on Psychic Game text */
+
+@-webkit-keyframes typing { from { width:0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h1 { 
+    border-right: .1em solid black;
+    width: 28ch;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(21,end),
+               blink-caret .45s step-end infinite;
+}
+
+h1.jumbotron{
+     color:#FFA500;
+}
